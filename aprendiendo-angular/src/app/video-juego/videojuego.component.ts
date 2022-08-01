@@ -4,21 +4,18 @@ import { Component } from '@angular/core';
 //crear el componente
 @Component({
     selector: 'videojuego',
-    template: `
-               <h2> componente de video juego </h2>
-               <ul>
-                   <li>GTA</li>
-                   <li>Fifa</li>
-                   <li>tekken</li>
-                   <li>mario</li>
-               </ul>
-               
-               `    
+    templateUrl: './videojuego.component.html',  
 })
 //exportar mi componente
 export  class VideoJuegoComponent{
+    //propiedades
+    public titulo: string;
+    public listado: string;
+    
     //crear el contructor
     constructor() {
+        this.titulo = 'Componente de videojuego';
+        this.listado = 'Listado de los juegos mas populares ';
         console.log("se ha cargado el componente: videojuego.componente.ts");
     }
 
