@@ -1,8 +1,15 @@
-<div>
+<!-- forma uno para traer un estilos de una variables
+  <div style=" background: {{config.fondo}}">-->
+<div [ngStyle]="{'background': config.fondo,
+                  'padding': '20px',
+                  'border':'5px solid black',
+                  'border-color': config.color
+                
+                }">
   <h1>
     Bienvenido a {{ title }}
   </h1>
-  <p>hola estamos aprendiendo AprendiendoAngular</p>
+  <p>{{ descripcion }}</p>
   <button (click)="ocultarVideoJuegos(false)" *ngIf="mostrar_videojuegos"> ocultar videojuegos</button>
   <button (click)="ocultarVideoJuegos(true)" *ngIf="!mostrar_videojuegos"> Mostrar </button>
   <!--llamada al componente-->
