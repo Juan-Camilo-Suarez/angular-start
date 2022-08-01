@@ -3,8 +3,10 @@
     Bienvenido a {{ title }}
   </h1>
   <p>hola estamos aprendiendo AprendiendoAngular</p>
+  <button (click)="ocultarVideoJuegos(false)" *ngIf="mostrar_videojuegos"> ocultar videojuegos</button>
+  <button (click)="ocultarVideoJuegos(true)" *ngIf="!mostrar_videojuegos"> Mostrar </button>
   <!--llamada al componente-->
-  <videojuego></videojuego>
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
   <zapatillas></zapatillas>
 
 </div>
