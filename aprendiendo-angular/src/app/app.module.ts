@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 //import mi componente
 import { VideoJuegoComponent } from './video-juego/videojuego.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
+import { CursosComponent } from './cursos/cursos.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ZapatillasComponent } from './zapatillas/zapatillas.component';
     AppComponent,
     //incluir el componente exportado
     VideoJuegoComponent,
-    ZapatillasComponent
+    ZapatillasComponent,
+    CursosComponent
   ],
   imports: [
     BrowserModule,
