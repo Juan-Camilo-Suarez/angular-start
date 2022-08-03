@@ -1,10 +1,25 @@
 <h2>{{ titulo }}</h2>
+<p>
+    Compra las zapatillas de las mejores marcas 
+</p>
 <ul>
-    <li *ngFor="let item of zapatillas" >{{ item.nombre }} -  <strong>{{ item.precio }}</strong>
+    <li *ngFor="let marca of marcas"> {{ marca}} </li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let item of zapatillas"  >
+        <!-- tachar un elemento si no esta en stock-->
+        <span [ngStyle]="{
+            'text-decoration': !item.stook ? 'line-through': 'none'
+        }">  
+        {{ item.nombre }} -  <strong>{{ item.precio }}</strong>
+        </span>
+
         <!--agregar una condicion a un elemnto y agregar propiedades-->
         <span *ngIf="item.precio<=80"
-        [style.background]="item.precio <= 80 ? 'green': 'transparent'" >EN OFERTA!</span>
-    
+        [style.background]="item.precio <= 80 ? 'green': 'transparent'" >EN OFERTA!
+    </span>
+        
     </li>
 
     
