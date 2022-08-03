@@ -1,4 +1,17 @@
 <h2>{{ titulo }}</h2>
+<hr>
+<p>añadir marcar</p>
+<p>
+    <input type="text" [(ngModel)]="mimarca"/>
+</p>
+<button (click)="getMarca()">mostar marca</button>
+<button (click)="addMarca()">add marca</button>
+<p>
+    {{ mimarca}}
+</p>
+
+
+<hr>
 <p>
     Compra las zapatillas de las mejores marcas 
 </p>
