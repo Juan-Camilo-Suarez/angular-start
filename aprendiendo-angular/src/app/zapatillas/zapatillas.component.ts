@@ -62,6 +62,10 @@ export class ZapatillasComponent implements OnInit {
         console.log("has salido del input");
     }
 
+    mostrarPalabra(){
+        alert(this.mimarca)
+    }
+
 
 
 }

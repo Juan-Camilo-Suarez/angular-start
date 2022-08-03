@@ -2,7 +2,7 @@
 <hr>
 <p>añadir marcar</p>
 <p>
-    <input type="text" [(ngModel)]="mimarca" (blur)="onBlur()"/>
+    <input type="text" [(ngModel)]="mimarca" (keyup.enter)="mostrarPalabra()"/>
 </p>
 <button (click)="getMarca()">mostar marca</button>
 <button (click)="addMarca()">add marca</button>
