@@ -15,6 +15,7 @@ export class ZapatillasComponent implements OnInit {
 
             new Zapatilla("superstar", 500, "blanco", " adidas", true)
             ,new Zapatilla("yezzy", 600, "verde", "nike", true)
+            ,new Zapatilla("nike", 75, "azul", "nike", true)
 
         ];
     }
