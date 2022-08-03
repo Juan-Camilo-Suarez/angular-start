@@ -58,6 +58,10 @@ export class ZapatillasComponent implements OnInit {
 
     }
 
+    onBlur(){
+        console.log("has salido del input");
+    }
+
 
 
 }
