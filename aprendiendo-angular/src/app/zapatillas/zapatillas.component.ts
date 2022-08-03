@@ -9,9 +9,11 @@ export class ZapatillasComponent implements OnInit {
     public titulo: String = "componente de zapatillas";
     public zapatillas: Array<Zapatilla>;
     public marcas: String[];
+    public color: String;
 
 
     constructor(){
+        this.color = "yellow";
         this.marcas = new Array();
         this.zapatillas = [
 
