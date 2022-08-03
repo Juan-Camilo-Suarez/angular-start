@@ -28,7 +28,8 @@
         <span [ngStyle]="{
             'text-decoration': !item.stook ? 'line-through': 'none'
         }">  
-        {{ item.nombre }} -  <strong>{{ item.precio }}</strong>
+        {{ item.nombre }} -  
+        <strong [class.altoprecio]="item.precio>=80 ">{{ item.precio }}</strong>
         </span>
 
         <!--agregar una condicion a un elemnto y agregar propiedades-->

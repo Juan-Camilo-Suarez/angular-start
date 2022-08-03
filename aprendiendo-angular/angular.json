@@ -24,6 +24,10 @@
             ],
             "styles": [
               "src/styles.css"
+              /*
+              add styles in other directories
+              */
+              "src/assets/styles.css"
             ],
             "scripts": []
           },
