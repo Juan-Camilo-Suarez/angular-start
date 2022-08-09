@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from "rxjs";
+import { FormArray } from "@angular/forms";
 
 @Injectable()
 export class PeticionesService {
@@ -15,4 +16,11 @@ export class PeticionesService {
     getUser(userId:number): Observable<any>{
         return this._http.get(this.url+'api/users/'+userId)
     }
-}
+
+    addUser(user: FormArray): Observable<any>{
+		let params = JSON.stringify(user);
+		let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+		return this._http.post(this.url+'api/useres', params, {headers: headers});
+    }
+	}
