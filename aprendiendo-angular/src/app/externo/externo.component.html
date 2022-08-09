@@ -2,6 +2,12 @@
 
 {{fecha | date: 'dd/MM/yy' }}
 
+<br>
+
+{{fecha | date: 'fullDate' | uppercase }}
+
+{{ 'HOLA MUNDO' | lowercase}}
+
 <hr>
 <input type="text" [(ngModel)]="userId" (keyup.enter)="cargaruser()">
 <div *ngIf="!user">
