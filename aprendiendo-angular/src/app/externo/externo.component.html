@@ -1,5 +1,8 @@
 <p>externo works!</p>
 
+{{fecha | date: 'dd/MM/yy' }}
+
+<hr>
 <input type="text" [(ngModel)]="userId" (keyup.enter)="cargaruser()">
 <div *ngIf="!user">
     cargando...
