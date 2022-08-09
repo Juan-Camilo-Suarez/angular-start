@@ -15,6 +15,8 @@ import { ExternoComponent } from './externo/externo.component';
 //impor para peticioes ajax
 import { HttpClientModule } from '@angular/common/http';
 
+import { CalculadoraPipe } from './pipes/calculadora.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     ZapatillasComponent,
     CursosComponent,
     HomeComponent,
-    ExternoComponent
+    ExternoComponent,
+    CalculadoraPipe
   ],
   imports: [
     BrowserModule,
