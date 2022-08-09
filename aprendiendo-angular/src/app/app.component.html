@@ -11,6 +11,17 @@
   </h1>
   <p>{{ descripcion }}</p>
 
+  <!-- menu con router link-->
+  <nav>
+    <a [routerLink]="['/']">Home</a>
+    &nbsp;
+    <a [routerLink]="['/zapatillas']">Zapatillas</a>
+    &nbsp;
+    <a [routerLink]="['/cursos']">Cursos</a>
+    &nbsp;
+    <a [routerLink]="['/videojuego']">Video Juegos</a>
+  </nav>
+
   <!--
   <button (click)="ocultarVideoJuegos(false)" *ngIf="mostrar_videojuegos"> ocultar videojuegos</button>
   <button (click)="ocultarVideoJuegos(true)" *ngIf="!mostrar_videojuegos"> Mostrar </button>
