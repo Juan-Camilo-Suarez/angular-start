@@ -11,7 +11,9 @@ import { VideoJuegoComponent } from './video-juego/videojuego.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
-
+import { ExternoComponent } from './externo/externo.component';
+//impor para peticioes ajax
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,14 +22,16 @@ import { HomeComponent } from './home/home.component';
     VideoJuegoComponent,
     ZapatillasComponent,
     CursosComponent,
-    HomeComponent
+    HomeComponent,
+    ExternoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     //ṕara poder hacer formularios en html
     FormsModule,
-    routing
+    routing,
+    HttpClientModule 
   ],
   providers: [
     appRoutingProviders

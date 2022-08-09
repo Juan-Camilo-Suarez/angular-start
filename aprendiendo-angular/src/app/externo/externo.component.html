@@ -1,0 +1,7 @@
+<p>externo works!</p>
+<input type="text" [(ngModel)]="userId" (keyup.enter)="cargaruser()">
+<div *ngIf="user">
+    <img src="{{user.avatar}}">
+    <h2>{{user.first_name + user.last_name}}</h2>
+
+</div>
