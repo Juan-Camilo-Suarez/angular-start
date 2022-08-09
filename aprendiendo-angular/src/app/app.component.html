@@ -10,10 +10,17 @@
     Bienvenido a {{ title }}
   </h1>
   <p>{{ descripcion }}</p>
+
+  <!--
   <button (click)="ocultarVideoJuegos(false)" *ngIf="mostrar_videojuegos"> ocultar videojuegos</button>
   <button (click)="ocultarVideoJuegos(true)" *ngIf="!mostrar_videojuegos"> Mostrar </button>
   <!--llamada al componente-->
-  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
-  <zapatillas></zapatillas>
+  <!--<videojuego *ngIf="mostrar_videojuegos"></videojuego>
+  <zapatillas></zapatillas>-->
+
+
+  <!--esta etiqueta carga los componentes en las rutas especificadas-->
+  <router-outlet></router-outlet>
+  
 
 </div>
